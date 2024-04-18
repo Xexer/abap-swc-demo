@@ -1,0 +1,14 @@
+{
+  "name": "zbs_swc_demo",
+  "version": "1.0.0",
+  "description": "ZBS_SWC_DEMO",
+  "repositoryLayout": {
+    "formatVersion": 6,
+    "format": "json",
+    "metaInformation": ".gctsmetadata/",
+    "tableContent": "true",
+    "readableSource": "false",
+    "keepClient": "false",
+    "fingerprintSeckey": "/BYOG/FPRINT_RT/E220E6D35D461EDEBFB5A3A9F8A353E5_0"
+  }
+}
