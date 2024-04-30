@@ -1,0 +1,36 @@
+[
+ {
+  "table":"ZBS_DMO_BC",
+  "index":
+  [
+   {
+    "columns":
+    [
+     {
+      "key":"CLIENT",
+      "value":"___"
+     },
+     {
+      "key":"CONFIG_ID",
+      "value":"TEST4"
+     }
+    ],
+    "hash":"/08B+HLJrM5o4GxijUCwLTo0yTg="
+   },
+   {
+    "columns":
+    [
+     {
+      "key":"CLIENT",
+      "value":"___"
+     },
+     {
+      "key":"CONFIG_ID",
+      "value":"TEST5"
+     }
+    ],
+    "hash":"HSL0hYIaphNYDbhTdJh/NhlkxTE="
+   }
+  ]
+ }
+]
