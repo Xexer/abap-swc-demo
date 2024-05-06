@@ -37,26 +37,26 @@ ENDCLASS.
 
 CLASS lhc_zbs_i_swcbc_s IMPLEMENTATION.
   METHOD get_instance_features.
-    DATA ld_edit_flag            TYPE abp_behv_flag VALUE if_abap_behv=>fc-o-enabled.
-    DATA ld_selecttransport_flag TYPE abp_behv_flag VALUE if_abap_behv=>fc-o-enabled.
-
-    IF lhc_rap_tdat_cts=>get( )->is_editable( ) = abap_false.
-      ld_edit_flag = if_abap_behv=>fc-o-disabled.
-    ENDIF.
-    IF lhc_rap_tdat_cts=>get( )->is_transport_allowed( ) = abap_false.
-      ld_selecttransport_flag = if_abap_behv=>fc-o-disabled.
-    ENDIF.
-    READ ENTITIES OF zbs_i_swcbc_s IN LOCAL MODE
-         ENTITY BusinessConfigAll
-         ALL FIELDS WITH CORRESPONDING #( it_keys )
-         RESULT DATA(lt_all).
-    IF lt_all[ 1 ]-%is_draft = if_abap_behv=>mk-off.
-      ld_selecttransport_flag = if_abap_behv=>fc-o-disabled.
-    ENDIF.
-    it_result = VALUE #( ( %tky                                = lt_all[ 1 ]-%tky
-                           %action-edit                        = ld_edit_flag
-                           %assoc-_BusinessConfigurati         = ld_edit_flag
-                           %action-SelectCustomizingTransptReq = ld_selecttransport_flag ) ).
+*    DATA ld_edit_flag            TYPE abp_behv_flag VALUE if_abap_behv=>fc-o-enabled.
+*    DATA ld_selecttransport_flag TYPE abp_behv_flag VALUE if_abap_behv=>fc-o-enabled.
+*
+*    IF lhc_rap_tdat_cts=>get( )->is_editable( ) = abap_false.
+*      ld_edit_flag = if_abap_behv=>fc-o-disabled.
+*    ENDIF.
+*    IF lhc_rap_tdat_cts=>get( )->is_transport_allowed( ) = abap_false.
+*      ld_selecttransport_flag = if_abap_behv=>fc-o-disabled.
+*    ENDIF.
+*    READ ENTITIES OF zbs_i_swcbc_s IN LOCAL MODE
+*         ENTITY BusinessConfigAll
+*         ALL FIELDS WITH CORRESPONDING #( it_keys )
+*         RESULT DATA(lt_all).
+*    IF lt_all[ 1 ]-%is_draft = if_abap_behv=>mk-off.
+*      ld_selecttransport_flag = if_abap_behv=>fc-o-disabled.
+*    ENDIF.
+*    it_result = VALUE #( ( %tky                                = lt_all[ 1 ]-%tky
+*                           %action-edit                        = ld_edit_flag
+*                           %assoc-_BusinessConfigurati         = ld_edit_flag
+*                           %action-SelectCustomizingTransptReq = ld_selecttransport_flag ) ).
   ENDMETHOD.
 
 
@@ -204,12 +204,12 @@ CLASS lhc_zi_businessconfigurati IMPLEMENTATION.
 
 
   METHOD get_global_features.
-    DATA ld_edit_flag TYPE abp_behv_flag VALUE if_abap_behv=>fc-o-enabled.
-
-    IF lhc_rap_tdat_cts=>get( )->is_editable( ) = abap_false.
-      ld_edit_flag = if_abap_behv=>fc-o-disabled.
-    ENDIF.
-    is_result-%update = ld_edit_flag.
+*    DATA ld_edit_flag TYPE abp_behv_flag VALUE if_abap_behv=>fc-o-enabled.
+*
+*    IF lhc_rap_tdat_cts=>get( )->is_editable( ) = abap_false.
+*      ld_edit_flag = if_abap_behv=>fc-o-disabled.
+*    ENDIF.
+*    is_result-%update = ld_edit_flag.
   ENDMETHOD.
 
 
@@ -391,29 +391,29 @@ CLASS lhc_zi_businessconfigurati IMPLEMENTATION.
 
 
   METHOD validatetransportrequest.
-    DATA ls_change TYPE REQUEST FOR CHANGE zbs_i_swcbc_s.
-
-    IF it_keys_businessconfigurati IS NOT INITIAL.
-      DATA(ld_is_draft) = it_keys_businessconfigurati[ 1 ]-%is_draft.
-    ELSE.
-      RETURN.
-    ENDIF.
-
-    READ ENTITY IN LOCAL MODE zbs_i_swcbc_s
-         FROM VALUE #( ( %is_draft                   = ld_is_draft
-                         SingletonID                 = 1
-                         %control-TransportRequestID = if_abap_behv=>mk-on ) )
-         RESULT FINAL(lt_transport_from_singleton).
-
-    IF lines( lt_transport_from_singleton ) = 1.
-      DATA(ld_transport_request) = lt_transport_from_singleton[ 1 ]-TransportRequestID.
-    ENDIF.
-
-    lhc_rap_tdat_cts=>get( )->validate_all_changes(
-        transport_request     = ld_transport_request
-        table_validation_keys = VALUE #( ( table = 'ZBS_DMO_BC' keys = REF #( it_keys_businessconfigurati ) ) )
-        reported              = REF #( reported )
-        failed                = REF #( failed )
-        change                = REF #( ls_change ) ).
+*    DATA ls_change TYPE REQUEST FOR CHANGE zbs_i_swcbc_s.
+*
+*    IF it_keys_businessconfigurati IS NOT INITIAL.
+*      DATA(ld_is_draft) = it_keys_businessconfigurati[ 1 ]-%is_draft.
+*    ELSE.
+*      RETURN.
+*    ENDIF.
+*
+*    READ ENTITY IN LOCAL MODE zbs_i_swcbc_s
+*         FROM VALUE #( ( %is_draft                   = ld_is_draft
+*                         SingletonID                 = 1
+*                         %control-TransportRequestID = if_abap_behv=>mk-on ) )
+*         RESULT FINAL(lt_transport_from_singleton).
+*
+*    IF lines( lt_transport_from_singleton ) = 1.
+*      DATA(ld_transport_request) = lt_transport_from_singleton[ 1 ]-TransportRequestID.
+*    ENDIF.
+*
+*    lhc_rap_tdat_cts=>get( )->validate_all_changes(
+*        transport_request     = ld_transport_request
+*        table_validation_keys = VALUE #( ( table = 'ZBS_DMO_BC' keys = REF #( it_keys_businessconfigurati ) ) )
+*        reported              = REF #( reported )
+*        failed                = REF #( failed )
+*        change                = REF #( ls_change ) ).
   ENDMETHOD.
 ENDCLASS.
