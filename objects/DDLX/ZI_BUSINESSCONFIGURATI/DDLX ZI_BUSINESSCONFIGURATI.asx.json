@@ -7,9 +7,9 @@
     "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
     "VERSION":"A",
     "CHANGED_BY":"SAP_CUSTOMER",
-    "CHANGED_ON":"2024-04-24",
-    "CHANGED_AT":"12:50:35",
-    "UUID":"0AA7539625BB1EEF80C727D2B22037B5",
+    "CHANGED_ON":"2024-05-15",
+    "CHANGED_AT":"08:35:31",
+    "UUID":"CE0B99F847741EDF84D2C2CA4E732E1E",
     "ABAP_LANGUAGE_VERSION":"5"
    }
   ]
@@ -34,7 +34,7 @@
     "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
     "VERSION":"A",
     "UUID":"",
-    "SOURCE":"@Metadata.layer: #CUSTOMER\r\n@UI: {\r\n  headerInfo: {\r\n    typeName: 'BusinessConfigurati', \r\n    typeNamePlural: 'BusinessConfiguratis', \r\n    title: {\r\n      type: #STANDARD, \r\n      label: 'Business Configuration', \r\n      value: 'ConfigId'\r\n    }\r\n  }\r\n}\r\nannotate view ZI_BusinessConfigurati with\r\n{\r\n  @UI.hidden: true\r\n  ConfigDeprecationCode_Critlty;\r\n  \r\n  @UI.identification: [ {\r\n    position: 1 \r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 1 \r\n  }, \r\n  {\r\n    type: #FOR_ACTION, \r\n    dataAction: 'CopyBusinessConfigurati', \r\n    label: 'Copy Selected Entry', \r\n    invocationGrouping: #CHANGE_SET\r\n  } ]\r\n  @UI.facet: [ {\r\n    id: 'ZI_BusinessConfigurati', \r\n    purpose: #STANDARD, \r\n    type: #IDENTIFICATION_REFERENCE, \r\n    label: 'Business Configuration', \r\n    position: 1 \r\n  } ]\r\n  ConfigId;\r\n  \r\n  @UI.identification: [ {\r\n    position: 2 , \r\n    label: 'Description'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 2 , \r\n    label: 'Description'\r\n  } ]\r\n  Description;\r\n  \r\n  @UI.identification: [ {\r\n    position: 3 \r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 3 \r\n  } ]\r\n  IsUsed;\r\n  \r\n  @UI.identification: [ {\r\n    position: 4 \r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 4 \r\n  } ]\r\n  IsMandatory;\r\n  \r\n  @UI.identification: [ {\r\n    position: 5 , \r\n    label: 'Processes'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 5 , \r\n    label: 'Processes'\r\n  } ]\r\n  Processes;\r\n  \r\n  @UI.identification: [ {\r\n    position: 6 , \r\n    label: 'WorkingClass'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 6 , \r\n    label: 'WorkingClass'\r\n  } ]\r\n  WorkingClass;\r\n  \r\n  @UI.identification: [ {\r\n    position: 7 , \r\n    criticality: 'ConfigDeprecationCode_Critlty'\r\n  }, \r\n  {\r\n    type: #FOR_ACTION, \r\n    dataAction: 'Deprecate', \r\n    label: 'Deprecate'\r\n  }, \r\n  {\r\n    type: #FOR_ACTION, \r\n    dataAction: 'Invalidate', \r\n    label: 'Invalidate'\r\n  } ]\r\n  @UI.textArrangement: #TEXT_ONLY\r\n  @UI.lineItem: [ {\r\n    position: 7 , \r\n    criticality: 'ConfigDeprecationCode_Critlty'\r\n  }, \r\n  {\r\n    type: #FOR_ACTION, \r\n    dataAction: 'Deprecate', \r\n    label: 'Deprecate Selected Entry'\r\n  }, \r\n  {\r\n    type: #FOR_ACTION, \r\n    dataAction: 'Invalidate', \r\n    label: 'Invalidate Selected Entry'\r\n  } ]\r\n  ConfigDeprecationCode;\r\n}"
+    "SOURCE":"@Metadata.layer: #CUSTOMER\r\n@UI: {\r\n  headerInfo: {\r\n    typeName: 'BusinessConfigurati', \r\n    typeNamePlural: 'BusinessConfiguratis', \r\n    title: {\r\n      type: #STANDARD, \r\n      label: 'Business Configuration', \r\n      value: 'ConfigId'\r\n    },\r\n    description: {\r\n      value: 'Description'\r\n    }\r\n  }\r\n}\r\nannotate view ZI_BusinessConfigurati with\r\n{\r\n  @UI.hidden: true\r\n  ConfigDeprecationCode_Critlty;\r\n  \r\n  @UI.identification: [ {\r\n    position: 1 \r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 1 \r\n  }, \r\n  {\r\n    type: #FOR_ACTION, \r\n    dataAction: 'CopyBusinessConfigurati', \r\n    label: 'Copy Selected Entry', \r\n    invocationGrouping: #CHANGE_SET\r\n  } ]\r\n  @UI.facet: [ {\r\n    id: 'ZI_BusinessConfigurati', \r\n    purpose: #STANDARD, \r\n    type: #IDENTIFICATION_REFERENCE, \r\n    label: 'Business Configuration', \r\n    position: 1 \r\n  } ]\r\n  @EndUserText.label: 'Configuration ID'\r\n  ConfigId;\r\n  \r\n  @UI.identification: [ {\r\n    position: 2 , \r\n    label: 'Description'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 2 , \r\n    label: 'Description'\r\n  } ]\r\n  Description;\r\n  \r\n  @UI.identification: [ {\r\n    position: 3 \r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 3 \r\n  } ]\r\n  @EndUserText.label: 'Is Used'\r\n  IsUsed;\r\n  \r\n  @UI.identification: [ {\r\n    position: 4 \r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 4 \r\n  } ]\r\n  @EndUserText.label: 'Is Mandatory'\r\n  IsMandatory;\r\n  \r\n  @UI.identification: [ {\r\n    position: 5 , \r\n    label: 'Processes'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 5 , \r\n    label: 'Processes'\r\n  } ]\r\n  Processes;\r\n  \r\n  @UI.identification: [ {\r\n    position: 6\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 6\r\n  } ]\r\n  @EndUserText.label: 'Working Class'\r\n  WorkingClass;\r\n  \r\n  @UI.identification: [ {\r\n    position: 7 , \r\n    criticality: 'ConfigDeprecationCode_Critlty'\r\n  }, \r\n  {\r\n    type: #FOR_ACTION, \r\n    dataAction: 'Deprecate', \r\n    label: 'Deprecate'\r\n  }, \r\n  {\r\n    type: #FOR_ACTION, \r\n    dataAction: 'Invalidate', \r\n    label: 'Invalidate'\r\n  } ]\r\n  @UI.textArrangement: #TEXT_ONLY\r\n  @UI.lineItem: [ {\r\n    position: 7 , \r\n    criticality: 'ConfigDeprecationCode_Critlty'\r\n  }, \r\n  {\r\n    type: #FOR_ACTION, \r\n    dataAction: 'Deprecate', \r\n    label: 'Deprecate Selected Entry'\r\n  }, \r\n  {\r\n    type: #FOR_ACTION, \r\n    dataAction: 'Invalidate', \r\n    label: 'Invalidate Selected Entry'\r\n  } ]\r\n  ConfigDeprecationCode;\r\n}"
    }
   ]
  },
@@ -42,6 +42,13 @@
   "table":"DDLX_RT_DATA",
   "data":
   [
+   {
+    "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
+    "ELEMENT":"",
+    "NAME":"UI.HEADERINFO.DESCRIPTION.VALUE",
+    "ELEMENT_TYPE":"N",
+    "VALUE":"'Description'"
+   },
    {
     "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
     "ELEMENT":"",
@@ -206,6 +213,13 @@
    {
     "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
     "ELEMENT":"CONFIGID",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"'Configuration ID'"
+   },
+   {
+    "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
+    "ELEMENT":"CONFIGID",
     "NAME":"UI.FACET$1$.ID",
     "ELEMENT_TYPE":"S",
     "VALUE":"'ZI_BusinessConfigurati'"
@@ -311,6 +325,13 @@
    {
     "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
     "ELEMENT":"ISMANDATORY",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"'Is Mandatory'"
+   },
+   {
+    "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
+    "ELEMENT":"ISMANDATORY",
     "NAME":"UI.IDENTIFICATION$1$.POSITION",
     "ELEMENT_TYPE":"S",
     "VALUE":"4"
@@ -325,6 +346,13 @@
    {
     "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
     "ELEMENT":"ISUSED",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"'Is Used'"
+   },
+   {
+    "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
+    "ELEMENT":"ISUSED",
     "NAME":"UI.IDENTIFICATION$1$.POSITION",
     "ELEMENT_TYPE":"S",
     "VALUE":"3"
@@ -367,9 +395,9 @@
    {
     "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
     "ELEMENT":"WORKINGCLASS",
-    "NAME":"UI.IDENTIFICATION$1$.LABEL",
+    "NAME":"ENDUSERTEXT.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'WorkingClass'"
+    "VALUE":"'Working Class'"
    },
    {
     "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
@@ -377,13 +405,6 @@
     "NAME":"UI.IDENTIFICATION$1$.POSITION",
     "ELEMENT_TYPE":"S",
     "VALUE":"6"
-   },
-   {
-    "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
-    "ELEMENT":"WORKINGCLASS",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "ELEMENT_TYPE":"S",
-    "VALUE":"'WorkingClass'"
    },
    {
     "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
@@ -451,6 +472,13 @@
     "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
     "DDLANGUAGE":"E",
     "ELEMENT":"CONFIGID",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "TEXT":"Configuration ID"
+   },
+   {
+    "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
+    "DDLANGUAGE":"E",
+    "ELEMENT":"CONFIGID",
     "NAME":"UI.FACET$1$.LABEL",
     "TEXT":"Business Configuration"
    },
@@ -478,6 +506,20 @@
    {
     "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
     "DDLANGUAGE":"E",
+    "ELEMENT":"ISMANDATORY",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "TEXT":"Is Mandatory"
+   },
+   {
+    "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
+    "DDLANGUAGE":"E",
+    "ELEMENT":"ISUSED",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "TEXT":"Is Used"
+   },
+   {
+    "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
+    "DDLANGUAGE":"E",
     "ELEMENT":"PROCESSES",
     "NAME":"UI.IDENTIFICATION$1$.LABEL",
     "TEXT":"Processes"
@@ -493,15 +535,8 @@
     "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
     "DDLANGUAGE":"E",
     "ELEMENT":"WORKINGCLASS",
-    "NAME":"UI.IDENTIFICATION$1$.LABEL",
-    "TEXT":"WorkingClass"
-   },
-   {
-    "DDLXNAME":"ZI_BUSINESSCONFIGURATI",
-    "DDLANGUAGE":"E",
-    "ELEMENT":"WORKINGCLASS",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"WorkingClass"
+    "NAME":"ENDUSERTEXT.LABEL",
+    "TEXT":"Working Class"
    }
   ]
  },
@@ -514,8 +549,8 @@
     "EXTENDED_ARTIFACT":"ZI_BUSINESSCONFIGURATI",
     "VARIANT":"",
     "LAYER":5500,
-    "DT_UUID":"0AA7539625BB1EEF80C727D2B22037B5",
-    "RT_HASH":"8B59512A510A38870E9E4EAA3299E71CA6C30A9D",
+    "DT_UUID":"CE0B99F847741EDF84D2C2CA4E732E1E",
+    "RT_HASH":"11AE7C5E7F31C6C8263CB7CD2BE5A9C0322B0057",
     "GEN_VERSION":"0"
    }
   ]

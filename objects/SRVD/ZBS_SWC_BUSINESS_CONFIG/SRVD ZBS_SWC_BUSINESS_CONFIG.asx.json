@@ -7,9 +7,9 @@
     "SRVDNAME":"ZBS_SWC_BUSINESS_CONFIG",
     "VERSION":"A",
     "CHANGED_BY":"SAP_CUSTOMER",
-    "CHANGED_ON":"2024-04-24",
-    "CHANGED_AT":"12:50:35",
-    "DT_UUID":"0AA7539625BB1EEF80C727D2B22057B5",
+    "CHANGED_ON":"2024-05-15",
+    "CHANGED_AT":"08:09:04",
+    "DT_UUID":"CE0B99F847741EDF84D24C9454254D48",
     "SOURCE_ORIGIN":"0",
     "SRVD_SOURCE_TYPE":"S",
     "ABAP_LANGUAGE_VERSION":"5"
@@ -35,7 +35,7 @@
    {
     "SRVDNAME":"ZBS_SWC_BUSINESS_CONFIG",
     "VERSION":"A",
-    "SOURCE":"@ObjectModel.leadingEntity.name: 'ZBS_I_SWCBC_S'\r\ndefine service ZBS_SWC_BUSINESS_CONFIG {\r\n  expose ZBS_I_SWCBC_S as BusinessConfigAll;\r\n  expose ZI_BUSINESSCONFIGURATI as BusinessConfigurati;\r\n}"
+    "SOURCE":"@ObjectModel.leadingEntity.name: 'ZBS_I_SWCBC_S'\r\ndefine service ZBS_SWC_BUSINESS_CONFIG {\r\n  expose ZBS_I_SWCBC_S          as BusinessConfigAll;\r\n  expose ZI_BusinessConfigurati as BusinessConfigurati;\r\n}"
    }
   ]
  },
@@ -83,7 +83,7 @@
     "SERVICE":"ZBS_SWC_BUSINESS_CONFIG",
     "SERVICE_RAW":"ZBS_SWC_BUSINESS_CONFIG",
     "SOURCE_TYPE":"S",
-    "DT_UUID":"0AA7539625BB1EEF80C727D2B22057B5",
+    "DT_UUID":"CE0B99F847741EDF84D24C9454254D48",
     "RT_HASH":"8ADA050DA55F537714DBC7F6D332D4EF5D64F530",
     "GEN_VERSION":"0"
    }

@@ -155,6 +155,9 @@ CLASS lhc_zi_businessconfigurati DEFINITION INHERITING FROM cl_abap_behavior_han
     METHODS validatetransportrequest FOR VALIDATE ON SAVE
       IMPORTING
                 it_keys_businessconfigurati FOR BusinessConfigurati~ValidateTransportRequest.
+
+    METHODS ValidateProccesesAreSet FOR VALIDATE ON SAVE
+      IMPORTING it_keys FOR BusinessConfigurati~ValidateProccesesAreSet.
 ENDCLASS.
 
 
@@ -415,5 +418,22 @@ CLASS lhc_zi_businessconfigurati IMPLEMENTATION.
 *        reported              = REF #( reported )
 *        failed                = REF #( failed )
 *        change                = REF #( ls_change ) ).
+  ENDMETHOD.
+
+
+  METHOD ValidateProccesesAreSet.
+    READ ENTITIES OF zbs_i_swcbc_s IN LOCAL MODE
+         ENTITY BusinessConfigurati
+         FIELDS ( Processes ) WITH CORRESPONDING #( it_keys )
+         RESULT DATA(lt_entries).
+
+    LOOP AT lt_entries INTO DATA(ls_entry).
+      IF ls_entry-Processes = 0.
+        INSERT VALUE #( configid = ls_entry-ConfigId ) INTO TABLE failed-businessconfigurati.
+        INSERT VALUE #( configid           = ls_entry-ConfigId
+                        %msg               = new_message_with_text( text = 'Field need at least one process' )
+                        %element-Processes = if_abap_behv=>mk-on ) INTO TABLE reported-businessconfigurati.
+      ENDIF.
+    ENDLOOP.
   ENDMETHOD.
 ENDCLASS.

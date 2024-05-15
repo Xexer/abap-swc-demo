@@ -27,6 +27,7 @@ authorization master( global )
   draft action Resume;
   draft determine action Prepare {
     validation BusinessConfigurati ~ ValidateDataConsistency;
+    validation BusinessConfigurati ~ ValidateProccesesAreSet;
   }
   action ( features : instance ) SelectCustomizingTransptReq parameter D_SelectCustomizingTransptReqP result [1] $self;
 
@@ -83,4 +84,5 @@ authorization dependent by _BusinessConfigAll
 
   validation ValidateTransportRequest on save ##NOT_ASSIGNED_TO_DETACT { create; update; delete; }
   validation ValidateDataConsistency on save { create; update; }
+  validation ValidateProccesesAreSet on save { field Processes; create; update; }
 }

@@ -9,7 +9,7 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@EndUserText.label: 'Business Configuration'\r\n@AccessControl.authorizationCheck: #CHECK\r\n@Metadata.allowExtensions: true\r\ndefine view entity ZI_BusinessConfigurati\r\n  as select from ZBS_DMO_BC\r\n  association to parent ZBS_I_SWCBC_S as _BusinessConfigAll on $projection.SingletonID = _BusinessConfigAll.SingletonID\r\n  association [0..*] to I_ConfignDeprecationCodeText as _ConfignDeprecationCodeText on $projection.ConfigDeprecationCode = _ConfignDeprecationCodeText.ConfigurationDeprecationCode\r\n{\r\n  key CONFIG_ID as ConfigId,\r\n  DESCRIPTION as Description,\r\n  IS_USED as IsUsed,\r\n  IS_MANDATORY as IsMandatory,\r\n  PROCESSES as Processes,\r\n  WORKING_CLASS as WorkingClass,\r\n  @ObjectModel.text.association: '_ConfignDeprecationCodeText'\r\n  CONFIGDEPRECATIONCODE as ConfigDeprecationCode,\r\n  @Semantics.systemDateTime.lastChangedAt: true\r\n  LAST_CHANGED_AT as LastChangedAt,\r\n  @Semantics.systemDateTime.localInstanceLastChangedAt: true\r\n  @Consumption.hidden: true\r\n  LOCAL_LAST_CHANGED_AT as LocalLastChangedAt,\r\n  @Consumption.hidden: true\r\n  1 as SingletonID,\r\n  _BusinessConfigAll,\r\n  case when CONFIGDEPRECATIONCODE = 'W' then 2 when CONFIGDEPRECATIONCODE = 'E' then 1 else 3 end as ConfigDeprecationCode_Critlty,\r\n  _ConfignDeprecationCodeText\r\n  \r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZBS_DMO_BC\"\n],\n\"ASSOCIATED\":\n[\n\"I_CONFIGNDEPRECATIONCODETEXT\",\n\"ZBS_I_SWCBC_S\"\n],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@EndUserText.label: 'Business Configuration'\r\n@AccessControl.authorizationCheck: #CHECK\r\n@Metadata.allowExtensions: true\r\ndefine view entity ZI_BusinessConfigurati\r\n  as select from zbs_dmo_bc\r\n  association to parent ZBS_I_SWCBC_S as _BusinessConfigAll on $projection.SingletonID = _BusinessConfigAll.SingletonID\r\n  association [0..*] to I_ConfignDeprecationCodeText as _ConfignDeprecationCodeText on $projection.ConfigDeprecationCode = _ConfignDeprecationCodeText.ConfigurationDeprecationCode\r\n{\r\n  key config_id as ConfigId,\r\n  description as Description,\r\n  is_used as IsUsed,\r\n  is_mandatory as IsMandatory,\r\n  processes as Processes,\r\n  @Consumption.valueHelpDefinition: [{ entity: { name: 'ZBS_I_SWCWorkingClassesVH', element: 'WorkingClass' } }]\r\n  working_class as WorkingClass,\r\n  @ObjectModel.text.association: '_ConfignDeprecationCodeText'\r\n  configdeprecationcode as ConfigDeprecationCode,\r\n  @Semantics.systemDateTime.lastChangedAt: true\r\n  last_changed_at as LastChangedAt,\r\n  @Semantics.systemDateTime.localInstanceLastChangedAt: true\r\n  @Consumption.hidden: true\r\n  local_last_changed_at as LocalLastChangedAt,\r\n  @Consumption.hidden: true\r\n  1 as SingletonID,\r\n  _BusinessConfigAll,\r\n  case when configdeprecationcode = 'W' then 2 when configdeprecationcode = 'E' then 1 else 3 end as ConfigDeprecationCode_Critlty,\r\n  _ConfignDeprecationCodeText\r\n  \r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZBS_DMO_BC\"\n],\n\"ASSOCIATED\":\n[\n\"I_CONFIGNDEPRECATIONCODETEXT\",\n\"ZBS_I_SWCBC_S\"\n],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
     "CHGFLAG":"",
@@ -52,56 +52,56 @@
     "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
     "LFIELDNAME":"CONFIGDEPRECATIONCODE",
     "NAME":"OBJECTMODEL",
-    "POSITION":3,
+    "POSITION":7,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
     "LFIELDNAME":"CONFIGDEPRECATIONCODE",
     "NAME":"OBJECTMODEL.TEXT.ASSOCIATION",
-    "POSITION":4,
+    "POSITION":8,
     "VALUE":"'_ConfignDeprecationCodeText'"
    },
    {
     "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
     "LFIELDNAME":"LASTCHANGEDAT",
     "NAME":"SEMANTICS",
-    "POSITION":5,
+    "POSITION":9,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
     "LFIELDNAME":"LASTCHANGEDAT",
     "NAME":"SEMANTICS.SYSTEMDATETIME.LASTCHANGEDAT",
-    "POSITION":6,
-    "VALUE":"true"
-   },
-   {
-    "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
-    "LFIELDNAME":"LOCALLASTCHANGEDAT",
-    "NAME":"CONSUMPTION",
-    "POSITION":9,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
-    "LFIELDNAME":"LOCALLASTCHANGEDAT",
-    "NAME":"CONSUMPTION.HIDDEN",
     "POSITION":10,
     "VALUE":"true"
    },
    {
     "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
     "LFIELDNAME":"LOCALLASTCHANGEDAT",
+    "NAME":"CONSUMPTION",
+    "POSITION":13,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
+    "LFIELDNAME":"LOCALLASTCHANGEDAT",
+    "NAME":"CONSUMPTION.HIDDEN",
+    "POSITION":14,
+    "VALUE":"true"
+   },
+   {
+    "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
+    "LFIELDNAME":"LOCALLASTCHANGEDAT",
     "NAME":"SEMANTICS",
-    "POSITION":7,
+    "POSITION":11,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
     "LFIELDNAME":"LOCALLASTCHANGEDAT",
     "NAME":"SEMANTICS.SYSTEMDATETIME.LOCALINSTANCELASTCHANGEDAT",
-    "POSITION":8,
+    "POSITION":12,
     "VALUE":"true"
    },
    {
@@ -122,15 +122,43 @@
     "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
     "LFIELDNAME":"SINGLETONID",
     "NAME":"CONSUMPTION",
-    "POSITION":11,
+    "POSITION":15,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
     "LFIELDNAME":"SINGLETONID",
     "NAME":"CONSUMPTION.HIDDEN",
-    "POSITION":12,
+    "POSITION":16,
     "VALUE":"true"
+   },
+   {
+    "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
+    "LFIELDNAME":"WORKINGCLASS",
+    "NAME":"CONSUMPTION",
+    "POSITION":3,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
+    "LFIELDNAME":"WORKINGCLASS",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY",
+    "POSITION":4,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
+    "LFIELDNAME":"WORKINGCLASS",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY.ELEMENT",
+    "POSITION":6,
+    "VALUE":"'WorkingClass'"
+   },
+   {
+    "STRUCOBJN":"ZI_BUSINESSCONFIGURATI",
+    "LFIELDNAME":"WORKINGCLASS",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY.NAME",
+    "POSITION":5,
+    "VALUE":"'ZBS_I_SWCWorkingClassesVH'"
    }
   ]
  },

@@ -1,0 +1,50 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZCL_BS_SWC_WORKING_QRY========CCAU.abap",
+   "fingerprint":"Mho0k8Of9cNgC3MFIuIgQ07tRA+cGxfs1eUIHBVp40TyBrOhHN/WZv3qVgeCIfc/pwIuN3DKfUREa9DF6vUDJg=="
+  },
+  {
+   "name":"CINC ZCL_BS_SWC_WORKING_QRY========CCDEF.abap",
+   "fingerprint":"fGETSHcBg5OUVWt4xIK+WBT80cBJoqb1GiR8BaVkiXSV8tjzBB2PCtCsQQfR4aGRnOWhuRQzTYhBe3jydy0jtA=="
+  },
+  {
+   "name":"CINC ZCL_BS_SWC_WORKING_QRY========CCIMP.abap",
+   "fingerprint":"sX6grLxZvyyAOGG+witJt1wlHokjxDr7zUI9xJuDKYtKSwbn0b0y7a4rMYCYkPesTBjqfowG/6LzXsP35EtrmA=="
+  },
+  {
+   "name":"CINC ZCL_BS_SWC_WORKING_QRY========CCMAC.abap",
+   "fingerprint":"b3mhR8by8SvZqXDkBt0Od960wSnFN2DPn0fpmKFdhTcI6vkjog6spmaxB2j0bEBzC69XG8JRfxuZIdSRr45S6w=="
+  },
+  {
+   "name":"CLAS ZCL_BS_SWC_WORKING_QRY.asx.json",
+   "fingerprint":"qDz/0HpA9pKFfD/qtBiNdBI6vwRYZ73PUVNRn5g1hR9pEyYUVPBIiZol/ZYc0Q2vJQAz95fouF5fseSxmFWsfg=="
+  },
+  {
+   "name":"CLSD ZCL_BS_SWC_WORKING_QRY.abap",
+   "fingerprint":"dfKnDF1+PhBTdLAUha+1c2Q+hUVcciQTo+9iyKq5Bvu2YJhKJqJdEN25lQOY+UpSLQD46H/p+reh967JD5PJ4w=="
+  },
+  {
+   "name":"CPRI ZCL_BS_SWC_WORKING_QRY.abap",
+   "fingerprint":"qM0wNi1szqtpkysUkgRku5uS/RbmOZHkjsUhTOqfUmYTRBMVQKibRnK4QXoAoLgBKm1cVeh7kWQsC9fwmrTylQ=="
+  },
+  {
+   "name":"CPRO ZCL_BS_SWC_WORKING_QRY.abap",
+   "fingerprint":"03k+uIEfJ3nJMmIegUT3oRwuXY5tXZcMiUGCs48yDOAlyo3llc5q9unOWEYD1KtNWNH5gzSojwLfoK7sCmuI+A=="
+  },
+  {
+   "name":"CPUB ZCL_BS_SWC_WORKING_QRY.abap",
+   "fingerprint":"jsAlMKmiD/VU/ZtRpHN42acg7PPxfGIXeVrnfIltkIMooV9ZFleeJuopkgOGtaqQ0txOM9IPNfVCFdV7FTg6gA=="
+  },
+  {
+   "name":"METH IF_RAP_QUERY_PROVIDER~SELECT.abap",
+   "fingerprint":"C/VwQXxJH0xo82reH7ue66SjJN4tYoX2o3WAOUvCgb3PpuHVok8uLUzKKaHVB+zWx5pBM/TqH/JgmqQGphShBQ=="
+  },
+  {
+   "name":"REPS ZCL_BS_SWC_WORKING_QRY========CT.abap",
+   "fingerprint":"OvBZ4gvK2envVct/0CbYPOodz6YAei+iPgwA5Gs2GZ+Q2tYM3hl6ZsIW2Qq1CYfdYT5Kjh6TZArGPuQxBLvGGw=="
+  }
+ ],
+ "fingerprintAll":"1B8GF1DPEOhuuOgMCey6qE/F/10cVqQ4A3AyK7BpORsGAjpJIgmAXv38I1WtSaasGgz2dgN7yxaeLcvkwL+5EQ=="
+}
