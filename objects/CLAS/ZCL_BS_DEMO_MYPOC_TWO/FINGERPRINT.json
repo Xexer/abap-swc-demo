@@ -1,0 +1,46 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZCL_BS_DEMO_MYPOC_TWO=========CCDEF.abap",
+   "fingerprint":"2nw85JSsrjmUZTI5OBaN0K26Dvbs5PfM6EKdrR4MG/to/kvbsBbE9YCtmP9CYB5VIr/Y/9Cj7b1S4qGLSwGsrA=="
+  },
+  {
+   "name":"CINC ZCL_BS_DEMO_MYPOC_TWO=========CCIMP.abap",
+   "fingerprint":"EYhf75lk0MCGvWo+3lO7ajVNIArP5pg4rYa1KvRuRy7Z/EkNBD4DtTXI24hvtch2h5+SrHbyQLmwa59G+cE12A=="
+  },
+  {
+   "name":"CINC ZCL_BS_DEMO_MYPOC_TWO=========CCMAC.abap",
+   "fingerprint":"E1KR6BvqMxkIIyEpJ18WXmfjfLNLs+znHTLVSzpB4v0phwXCDL/S8M/0QeUW/LdAQnFWOpGipQ7LwtRmkd8TGQ=="
+  },
+  {
+   "name":"CLAS ZCL_BS_DEMO_MYPOC_TWO.asx.json",
+   "fingerprint":"5OnN//jh9fr+XYqLDCw+pybfLQ1j58dyEN8AbHSDZzS3o46EhOnJiuFhuWmfOO77jzL1CzauF82EA+/GT5adEw=="
+  },
+  {
+   "name":"CLSD ZCL_BS_DEMO_MYPOC_TWO.abap",
+   "fingerprint":"ZORCIj6K1kAG9WcZ3ysib+11cbOSBtOZ7JR/9vTd12hSjanhcnFyHMXHp+6qeec3JmF45LSjtKR+cBNCDv+O+A=="
+  },
+  {
+   "name":"CPRI ZCL_BS_DEMO_MYPOC_TWO.abap",
+   "fingerprint":"YyLkGFVEp4+IYb4wgnw5iI5u34ZUkbDjJC51EvHn2pZZkgnHE7UU8/FJg3Jc1d8sdIj5iVASdUr6Sp09iIyLMQ=="
+  },
+  {
+   "name":"CPRO ZCL_BS_DEMO_MYPOC_TWO.abap",
+   "fingerprint":"2amR7SCtWqw9pcd/XqFpgW6vt6EiOeQ+7SQO0DwUnFwp5xEMBWc5cAKvo3SS1hjRo36XEWiuu5rwhNf38meeJg=="
+  },
+  {
+   "name":"CPUB ZCL_BS_DEMO_MYPOC_TWO.abap",
+   "fingerprint":"DBnoSTurfN8b1wIoGHx9D6x4XaraNzC4X6+uZYU5k+V52p0wTkZPVr5lLnp3HLF6TbVYf4t/YFDm7W8usQo+Nw=="
+  },
+  {
+   "name":"METH IF_OO_ADT_CLASSRUN~MAIN.abap",
+   "fingerprint":"3e87xcrS8Hs5kQjj4sUWp0UzgrQrOs83uKH8WjASBGL8orhvdq7ViH6HFinMSkyI/9lIMPp5MvBJ6ErL4si9Yg=="
+  },
+  {
+   "name":"REPS ZCL_BS_DEMO_MYPOC_TWO=========CT.abap",
+   "fingerprint":"l+EurAucmLQ+ggaSzrZf3q4e/G55InmybbEgvwFm+xeOzmRFS0mAtRdkafPOXrjPiQ5pcmdsZ3n66KZiYfRA8A=="
+  }
+ ],
+ "fingerprintAll":"3Uw8v+r1QJN5tf04OElaw1+h2E0cS2lj9FTLkbEGRYBAf33FR7IkVfSbu57SEJ61fKxKN+0WcaOC3IOhk8MUpw=="
+}

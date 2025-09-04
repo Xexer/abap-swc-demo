@@ -11,12 +11,12 @@
     "ROOT_ENTITY":"BusinessConfigAll",
     "ABAP_LANGUAGE_VERSION":"5",
     "SKIP_ROOT_ENTITY":"X",
-    "APP_CONFIGURATION":"{\"LIST_REPORT\":{\"INITIAL_LOAD\":\"Enabled\",\"VARIANT_MANAGEMENT\":\"Page\"},\"OBJECT_PAGES\":[{\"ENTITY\":\"BusinessConfigAll\",\"SECTIONLAYOUT\":\"Page\",\"VARIANT_MANAGEMENT\":\"Control\"},{\"ENTITY\":\"BusinessConfigurati\",\"TYPE\":\"GridTable\",\"CREATION_MODE\":{\"NAME\":\"InlineCreationRows\",\"CREATE_AT_END\":true},\"SELECTION_MODE\":\"Single\",\"ROW_COUNT_MODE\":\"Auto\",\"ROW_COUNT\":5}]}",
-    "CHANGED_AT":"+020240514142906",
+    "APP_CONFIGURATION":"{\"LIST_REPORT\":{\"INITIAL_LOAD\":\"Enabled\",\"VARIANT_MANAGEMENT\":\"Page\"},\"OBJECT_PAGES\":[{\"ENTITY\":\"BusinessConfigAll\",\"SECTIONLAYOUT\":\"Page\",\"VARIANT_MANAGEMENT\":\"Control\"},{\"ENTITY\":\"BusinessConfigurati\",\"CONDENSED_TABLE_LAYOUT\":true,\"TYPE\":\"ResponsiveTable\",\"CREATION_MODE\":{\"NAME\":\"InlineCreationRows\",\"CREATE_AT_END\":true},\"SELECTION_MODE\":\"Single\",\"ROW_COUNT_MODE\":\"Auto\",\"ROW_COUNT\":3}]}",
+    "CHANGED_AT":"+020240527193745",
     "CHANGED_BY":"SAP_CUSTOMER",
     "CREATED_AT":"+020240424125045",
     "CREATED_BY":"SAP_CUSTOMER",
-    "STATUS":"A",
+    "STATUS":"",
     "DATA_STATUS":"0",
     "BC_GROUP":""
    }
@@ -31,7 +31,7 @@
     "TECHNICAL_ID":"ZBS_SWC_BC_OBJECT",
     "DESCRIPTION":"Maintain BC",
     "NAME":"BC Test (BTP)",
-    "STATUS":"A"
+    "STATUS":""
    }
   ]
  },

@@ -1,0 +1,50 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZCL_BS_DEMO_MYPOC_ONE=========CCAU.abap",
+   "fingerprint":"prf0CKzr5lzlZq7a32Q6uzV5/eYWz9LBedSHLvsOurI8ILpAtb+vZroCzgYP1+dJIXl14YHCAKRJHK7JCblS0w=="
+  },
+  {
+   "name":"CINC ZCL_BS_DEMO_MYPOC_ONE=========CCDEF.abap",
+   "fingerprint":"qDwLs4I+OrPcj5shbfG1RjJsyLn3Ne/ftepBd4YairA1sJw7Qed3iY/sOoRxMO0DagMVE9pcFXLdEzJAf7Da4A=="
+  },
+  {
+   "name":"CINC ZCL_BS_DEMO_MYPOC_ONE=========CCIMP.abap",
+   "fingerprint":"xZuM7T0Kx+WsgJ91do9zQZsNBxmEuRhWspyuSR132ocB5JGBwqpJJWcD0TO+pE/oJnfjcNbbo1hc2W+S5r/80Q=="
+  },
+  {
+   "name":"CINC ZCL_BS_DEMO_MYPOC_ONE=========CCMAC.abap",
+   "fingerprint":"VXteZ54Eq9EvVz1Wa+VbOZ8g+SFCb2/UtXAqiKV1LZnHc7O8o7zNw1yaA/wriw8X/Wa/+qetnPt7S9e4Jq3u/g=="
+  },
+  {
+   "name":"CLAS ZCL_BS_DEMO_MYPOC_ONE.asx.json",
+   "fingerprint":"4octx3GohJsDU6UnnB8yD2yLGXksyl6AEUHE0RZtyoKeagaEZv6KWtljQIFWYf+RrP1uCIGEaqX+zfKBdjbSIA=="
+  },
+  {
+   "name":"CLSD ZCL_BS_DEMO_MYPOC_ONE.abap",
+   "fingerprint":"yRcmd8auKkv1ZI022CR0M9Rpmq9sU85ALaJ4/SeYwgczV0Oiz6itqV6T6WrszWV7LSYS1AacSa2viWec8BsxHQ=="
+  },
+  {
+   "name":"CPRI ZCL_BS_DEMO_MYPOC_ONE.abap",
+   "fingerprint":"s7rHTzjZlggCpz9ViXT/OfWMeCMUJfIOx/UeipFOt7uERnSHwKUpmS63Xun5wGPYWzB9rHioM5JuK5i/1Zng9A=="
+  },
+  {
+   "name":"CPRO ZCL_BS_DEMO_MYPOC_ONE.abap",
+   "fingerprint":"oiOp/j60gDHGUhWKJt2IHbjBAbz3b6YKLkmGx/8dGc+AQ4mfhysbWkla4MG+o56ysjQjOoE5IbQCExk47E1OLA=="
+  },
+  {
+   "name":"CPUB ZCL_BS_DEMO_MYPOC_ONE.abap",
+   "fingerprint":"koKyBSc1mFgIK8yjZuZPh1+O2YrbRwKpoP8z+DNENFwkkbiyph1r1JSnW6SGb8ih9IKqUa5b9jnS9CjzUeyg/w=="
+  },
+  {
+   "name":"METH IF_OO_ADT_CLASSRUN~MAIN.abap",
+   "fingerprint":"kStMNS9Ogq9nr2aked9yvBfJFIKOFde0k/MCV1iOoNPuY5GXMDRwKtt2ey0BvaveBRcWIdmno2OHBNEsuQ1L4A=="
+  },
+  {
+   "name":"REPS ZCL_BS_DEMO_MYPOC_ONE=========CT.abap",
+   "fingerprint":"I97NXbvypCZ+Q+070VD0yPiy6qJiX/nCZfpuQOouXPqsI4esL2H4qFyUXpp+ksC44FSqHkkT/8GAbPYr118O0A=="
+  }
+ ],
+ "fingerprintAll":"mR7vIr54wtIo12xu14ZpMenGF2pgQFF84+e2XMK8zjOn7cIFCvXShUDoMdYM7leWa+lJ75LqaZWmMA/B/UVDqQ=="
+}

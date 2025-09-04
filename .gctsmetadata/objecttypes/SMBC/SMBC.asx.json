@@ -101,5 +101,23 @@
     "DDTEXT":"Business Configuration Object"
    }
   ]
+ },
+ {
+  "table":"TVIM_IMPL_CLASS",
+  "data":
+  [
+   {
+    "OBJECTNAME":"SMBC",
+    "OBJECTTYPE":"L",
+    "VALIDATION_CLASS":"",
+    "ADDITIONAL_SAVE_CLASS":"",
+    "CHANGE_LOGS_CLASS":"CL_MBC_CHANGE_LOGS",
+    "ENQUEUE_DEQUEUE_CLASS":"",
+    "AUTHORITY_CHECK_CLASS":"",
+    "DB_SAVE_REPLACE_CLASS":"",
+    "DEPENDENCY_CLASS":"",
+    "DB_READ_REPLACE_CLASS":""
+   }
+  ]
  }
 ]
